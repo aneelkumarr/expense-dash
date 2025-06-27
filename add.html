@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Entry</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-4">
+  <h2 class="text-xl font-bold text-center mb-4">➕ Add Entry</h2>
+
+  <form id="expenseForm" class="space-y-4 bg-gray-800 p-4 rounded-lg">
+    <select id="type" required class="w-full p-2 rounded bg-gray-700">
+      <option value="expense">Expense</option>
+      <option value="income">Income</option>
+    </select>
+    <input type="number" id="amount" placeholder="Amount ₹" required class="w-full p-2 rounded bg-gray-700" />
+    <input type="date" id="date" required class="w-full p-2 rounded bg-gray-700" />
+    <select id="category" required class="w-full p-2 rounded bg-gray-700">
+      <option value="">--Select Category--</option>
+      <option value="Chitti">Chitti</option>
+      <option value="Salary">Salary</option>
+      <option value="Barrow">Barrow</option>
+      <option value="Personal Loan">Personal Loan</option>
+      <option value="EMI">EMI</option>
+    </select>
+    <input type="text" id="person" placeholder="Person" required class="w-full p-2 rounded bg-gray-700" />
+    <input type="text" id="note" placeholder="Note (optional)" class="w-full p-2 rounded bg-gray-700" />
+    <button type="submit" class="bg-green-500 w-full py-2 rounded font-semibold">Save</button>
+    <button type="button" onclick="location.href='index.html'" class="bg-gray-600 w-full py-2 rounded font-semibold mt-2">🔙 Back to Dashboard</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
